@@ -1,56 +1,35 @@
-### Vending Machine Program
+# Snack Vending Machine
 
-This Python program simulates the operation of a simple snack vending machine. It allows users to choose from three snack items, insert coins, and receive their selected item along with any change if they overpay. The machine tracks the inventory, handles payments, and displays a report of the total money collected and the available stock.
+This Python program simulates the operation of a simple snack vending machine. Users can choose from snacks, insert coins, and receive their selected item, including any change if overpaid.
 
----
+## Features:
+- Snack selection (chips, candy, cookies)
+- Coin insertion (quarters, dimes, nickels, pennies)
+- Change calculation and breakdown
+- Inventory management
+- Reporting feature for the current inventory and total money collected
+- Option to turn off the machine
 
-### Features:
-1. **Snack Selection**: Users can choose from three snacks:
-   - Chips ($1.50)
-   - Candy ($1.25)
-   - Cookies ($2.00)
+## Usage:
+1. Run the Python script.
+2. Choose a snack from the available options: chips, candy, cookies.
+3. Insert the required number of coins.
+4. If the payment is sufficient, the snack will be dispensed.
+5. If overpaid, the correct change will be returned.
 
-2. **Coin Insertion**: Users insert coins (quarters, dimes, nickels, pennies) to pay for the selected snack. The program calculates the total amount inserted.
+## How to Run:
+1. Clone this repository:
+    ```bash
+    git clone https://github.com/blexolonde/vending-machine.git
+    ```
+2. Navigate to the directory:
+    ```bash
+    cd vending-machine
+    ```
+3. Run the script:
+    ```bash
+    python vending_machine.py
+    ```
 
-3. **Transaction Processing**:
-   - If the user inserts enough money, the snack is dispensed.
-   - If the user overpays, the program calculates and gives back the correct change, broken down into coins.
-   - If the user underpays, the program alerts them that the funds are insufficient and refunds the money.
-
-4. **Inventory Management**: The program checks if the selected snack is in stock. If the item is out of stock, the user is informed.
-
-5. **Reporting**: Users can request a report that shows the current inventory of snacks and the total money collected by the machine.
-
-6. **Shutdown**: The machine can be turned off by typing "off".
-
----
-
-### Usage:
-1. **Start the machine**: The machine will display a menu with available snacks.
-2. **Select a snack**: Type the name of the snack you want (chips, candy, or cookies).
-3. **Insert coins**: Enter the number of each type of coin (quarters, dimes, nickels, pennies) you want to insert.
-4. **Get your snack**: If the payment is valid, the snack will be dispensed. If the payment is insufficient, the money will be refunded.
-5. **Turn off the machine**: Type "off" to stop the machine.
-
-### Example:
-```
-Welcome to the Snack Vending Machine!
-Available snacks: chips, candy, cookies
-What snack would you like? (chips/candy/cookies): candy
-Please insert coins (quarters, dimes, nickels, pennies):
-Number of quarters: 20
-Number of dimes: 10
-Number of nickels: 10
-Number of pennies: 10
-Here's $5.35 in change.
-21 quarter(s)
-1 dime(s)
-Here is your candy. Enjoy!
-```
-
----
-
-### Requirements:
-- Python 3.x
-
-This is a simple command-line program that simulates a vending machine experience!
+## License:
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
